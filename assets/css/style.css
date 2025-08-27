@@ -1,0 +1,32 @@
+video {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+nav {
+    z-index: 100;
+}
+
+.sub-text {
+    font-family: 'Poppins', serif;
+}
+
+.title-text {
+    font-family: 'Inter', serif;
+}
+
+.home-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background: url("../img/pre-load.webp") no-repeat center;
+    background-size: cover;
+    z-index: -2;
+}
+  
+.home-bg video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

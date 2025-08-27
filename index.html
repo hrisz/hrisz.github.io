@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haris | Profile Detail</title>
+    <link rel="icon" href="assets/icon/hrisz-logo.webp" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+
+<body class="min-h-screen overflow-x-hidden bg-black">
+    <nav id="main-nav" class="fixed navbar top-0 left-0 z-50 flex items-center justify-between p-2 w-full">
+        <a class="navbar-brand ml-5" href="#">
+            <img src="assets/icon/hrisz-logo.webp" alt="mainlogo" width="40" height="24">
+        </a>
+        <span class="lg:flex md:flex sm:flex hidden gap-4 justify-center md:ml-auto md:pr-10 sm:pr-4 items-center">
+
+            <!-- Home -->
+            <a href="#">
+                <button class="title-text border-2 border-transparent border-b-white shadow-transparent hover:border-b-[#4DA6FF] hover:border-x-[#4DA6FF] transition px-2 py-1 text-white text-sm flex items-center ml-auto hover:shadow-lg hover:shadow-[#4D4DFF]/50">
+                    HOME
+                </button>
+            </a>
+
+            <!-- About -->
+            <a href="#about">
+                <button class="title-text border-2 border-transparent border-b-white shadow-transparent hover:border-b-[#4DA6FF] hover:border-x-[#4DA6FF] transition px-2 py-1 text-white text-sm flex items-center ml-auto hover:shadow-lg hover:shadow-[#4D4DFF]/50">
+                    ABOUT
+                </button>
+            </a>
+
+            <!-- Projects -->
+            <a href="#">
+                <button class="title-text border-2 border-transparent border-b-white shadow-transparent hover:border-b-[#4DA6FF] hover:border-x-[#4DA6FF] transition px-2 py-1 text-white text-sm flex items-center ml-auto hover:shadow-lg hover:shadow-[#4D4DFF]/50">
+                    PROJECTS
+                </button>
+            </a>
+
+            <!-- Contact -->
+            <a href="#">
+                <button class="title-text border-2 border-transparent border-b-white shadow-transparent hover:border-b-[#4DA6FF] hover:border-x-[#4DA6FF] transition px-2 py-1 text-white text-sm flex items-center ml-auto hover:shadow-lg hover:shadow-[#4D4DFF]/50">
+                    CONTACT
+                </button>
+            </a>
+            <a href="https://github.com/hrisz" target="_blank">
+                <button
+                    class="border-2 md:flex sm:hidden border-transparent border-l-white shadow-transparent hover:border-l-[#4DA6FF] hover:border-b-[#4DA6FF] transition px-2 py-1 text-white text-sm flex items-center ml-auto hover:shadow-xl hover:shadow-[#4D4DFF]/50">
+                    <span>
+                        <img src="https://avatars.githubusercontent.com/u/60280111?v=4" class="navprofile rounded-full"
+                            alt="" width="30px">
+                    </span>
+                    <div class="flex flex-wrap -m-2">
+                        <div class="w-auto p-2 title-text">
+                            <h2 class="text-sm text-left px-2 hidden md:block">See my profile on</h1>
+                                <p class="text-sm font-semibold text-left text-sky-500 px-2 hidden md:block">GitHub</p>
+                        </div>
+                    </div>
+                </button>
+            </a>
+        </span>
+        <button id="dropdownDividerButton" data-dropdown-toggle="dropdownDivider" data-dropdown-offset-distance="12"
+            class="md:hidden sm:hidden block text-white focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
+            type="button"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="size-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 4 4 4-4" /></svg>
+        </button>
+
+        <!-- Dropdown menu -->
+        <div id="dropdownDivider"
+            class="z-100 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-[#282828] dark:divide-gray-600">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDividerButton">
+                <li>
+                    <a href="#"
+                        class="sub-text block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">About</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="sub-text block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Projects</a>
+                </li>
+                <li>
+                    <a href="#"
+                        class="sub-text block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Contacts</a>
+                </li>
+            </ul>
+            <div class="py-2 pl-4 hover:bg-gray-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">
+                <a href="https://github.com/hrisz" class="flex items-center" target="_blank">
+                    <span><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                            class="mb-1 w-4 h-4 brightness-0 invert" alt="githubicon"></span>
+                    <p class="sub-text block px-2 py-2 text-sm text-white">GitHub</p>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <section id="home" class="min-h-screen flex items-center justify-center">
+        <div class="w-full h-screen home-bg brightness-75 object-cover">
+            <video preload="auto" autoplay muted loop playsinline>
+                <source src="assets/video/vid-bg.webm" type="video/mp4" class="src-video">
+            </video>
+        </div>
+        <!-- Middle content -->
+        <div class="z-100 h-auto max-w-3xl md:container-lg md:mx-auto px-8 gap-y-2 flex flex-col justify-center items-center">
+            <img src="assets/img/me.webp" data-aos="fade-up" class="justify-center rounded-full h-32 w-32" alt="">
+            <p data-aos="fade-up" data-aos-delay="200"
+                class="text-white text-center text-3xl xs:text-3xl sm:text-4xl md:text-5xl font-medium drop-shadow-2xl">
+                Hello! I'm <span
+                    class="bg-clip-text text-transparent bg-gradient-to-r from-sky-300 to-violet-400 pr-1">Haris
+                    Saefuloh</span><span class="absolute w-6 md:w-10 h-6 md:h-10 inline-block text-indigo-400">
+                    <svg class="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                        <rect width="256" height="256" fill="none"></rect>
+                        <path
+                            d="M138.7,175.5l-19.2,52.1a8,8,0,0,1-15,0L85.3,175.5a8.1,8.1,0,0,0-4.8-4.8L28.4,151.5a8,8,0,0,1,0-15l52.1-19.2a8.1,8.1,0,0,0,4.8-4.8l19.2-52.1a8,8,0,0,1,15,0l19.2,52.1a8.1,8.1,0,0,0,4.8,4.8l52.1,19.2a8,8,0,0,1,0,15l-52.1,19.2A8.1,8.1,0,0,0,138.7,175.5Z"
+                            fill="currentcolor"></path>
+                        <line x1="176" y1="16" x2="176" y2="64" stroke="currentcolor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></line>
+                        <line x1="200" y1="40" x2="152" y2="40" stroke="currentcolor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></line>
+                        <line x1="224" y1="72" x2="224" y2="104" stroke="currentcolor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></line>
+                        <line x1="240" y1="88" x2="208" y2="88" stroke="currentcolor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="16"></line>
+                    </svg>
+                </span>
+            </p>
+            <p data-aos="fade-up" data-aos-delay="300"
+                class="sub-text text-gray-500 md:text-sm text-xs text-center py-2 !leading-normal">
+                a passionate Game Developer and Front-End Developer with expertise in creating interactive applications
+                and engaging digital experiences.
+            </p>
+            <div class="flex flex-col items-center">
+                <p data-aos="fade-up" data-aos-delay="400"
+                    class="sub-text pt-2 bg-clip-text text-transparent bg-gradient-to-r from-sky-300 to-purple-300 drop-shadow-2xl font-semibold">
+                    Reach me on:</p>
+                <div class="flex gap-4">
+                    <div data-aos="fade-up" data-aos-delay="500"
+                        class="md:w-32 sm:w-28 w-24 invert flex justify-center items-center">
+                        <a href="https://github.com/hrisz" target="_blank">
+                            <img src="https://www.pngplay.com/wp-content/uploads/12/GitHub-PNG-HD-Photos.png" alt="">
+                        </a>
+                    </div>
+                    <div
+                        class="flex justify-center items-center bg-clip-text text-transparent bg-gradient-to-r from-sky-300 to-purple-300">
+                        ✦
+                    </div>
+                    <div data-aos="fade-up" data-aos-delay="500"
+                        class="md:w-32 sm:w-28 w-24 brightness-0 invert flex justify-center items-center">
+                        <a href="https://www.linkedin.com/in/haris-saefuloh/" target="_blank">
+                            <img src="https://www.edigitalagency.com.au/wp-content/uploads/Linkedin-logo-blue-png-large-size.png"
+                                alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:flex md:flex hidden justify-center items-center absolute bottom-0 mb-10">
+                <video autoplay muted loop playsinline src="assets/video/scroll-down.webm" class="w-14"></video>
+            </div>
+        </div>
+    </section>
+    <section id="about" class="h-screen relative flex justify-center items-center justify-center bg-[#121212] md:px-4 sm:px-6 px-8">
+        <div data-aos="fade-up" data-aos-delay="100" class="text-center max-w-3xl">
+            <h2 class="flex justify-center items-center md:text-5xl text-3xl font-bold text-white mb-6">
+                <span><img src="assets/img/code-prof.webp" class="w-24 pr-2" alt=""></span>About<span class="bg-clip-text text-transparent bg-gradient-to-r from-sky-300 to-violet-400">&nbsp;Me</span>
+            </h2>
+            <p class="text-gray-400 leading-relaxed text-base md:text-lg">
+                I'm <span class="text-sky-300 font-semibold">Haris Saefuloh</span>, a passionate
+                <span class="text-violet-300 font-semibold">Game Developer</span> and
+                <span class="text-violet-300 font-semibold">Front-End Engineer</span> based in Indonesia.
+                I love crafting beautiful, functional, and interactive digital experiences. 
+                Currently, I'm focusing on building real-time applications, stunning UI/UX designs, and immersive game experiences.
+            </p>
+            <p class="text-gray-400 leading-relaxed text-base md:text-lg text-center mt-6">
+                Here's the tools and languages I often use:
+            </p>
+            <ul class="flex flex-wrap justify-center items-center gap-4 pt-4">
+                <li data-aos="fade-in" data-aos-delay="300" class="md:w-12 sm:w-10 w-8">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" />
+                </li>
+                <li data-aos="fade-in" data-aos-delay="350" class="md:w-12 sm:w-10 w-8">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" />
+                </li>
+                <li data-aos="fade-in" data-aos-delay="400" class="md:w-12 sm:w-10 w-8">
+                    <img src="https://camo.githubusercontent.com/7f9274a84366343dabd1c8adf682cc76a15152ca66004cc942ae4199aeb7e296/68747470733a2f2f692e6e616d752e77696b692f692f426d7773334c7574395350444c696a42683652554d7a39567459786a726d58576a6c5a42463264676554594d4f47414b6e7466483156516e75696e7a777637666d7932786f696b3363735568797172636853794b6d512e77656270" alt="">
+                </li>
+                <li data-aos="fade-in" data-aos-delay="450" class="md:w-12 sm:w-10 w-8">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flutter/flutter-original.svg" />
+                </li>
+                <li data-aos="fade-in" data-aos-delay="500" class="md:w-12 sm:w-10 w-8">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+                </li>
+                <li data-aos="fade-in" data-aos-delay="550" class="md:w-12 sm:w-10 w-8">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+                </li>
+                <li data-aos="fade-in" data-aos-delay="600" class="md:w-12 sm:w-10 w-8">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+                </li>
+                <li data-aos="fade-in" data-aos-delay="650" class="md:w-12 sm:w-10 w-8">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+                </li>
+                <li data-aos="fade-in" data-aos-delay="700" class="md:w-12 sm:w-10 w-8">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
+                </li>
+                <li data-aos="fade-in" data-aos-delay="750" class="md:w-12 sm:w-10 w-8">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg" />
+                </li>
+                <li data-aos="fade-in" data-aos-delay="800" class="md:w-12 sm:w-10 w-8">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg" />
+                </li>
+                <li data-aos="fade-in" data-aos-delay="850" class="md:w-12 sm:w-10 w-8">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg" />
+                </li>
+                <li data-aos="fade-in" data-aos-delay="900" class="md:w-12 sm:w-10 w-8">
+                    <img src="https://camo.githubusercontent.com/2aba0f8a01fe038b86c1bdd4387e94ca0232015d975b73bac3af5990d4c3fe6d/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f632f63362f446172745f6c6f676f2e706e67" alt="">
+                </li>
+                <li data-aos="fade-in" data-aos-delay="950" class="md:w-12 sm:w-10 w-8">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" />
+                </li>
+                <li data-aos="fade-in" data-aos-delay="1000" class="md:w-12 sm:w-10 w-8">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/visualstudio/visualstudio-original.svg" />
+                </li>
+                <li data-aos="fade-in" data-aos-delay="1050" class="md:w-12 sm:w-10 w-8">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" />
+                </li>
+                <li data-aos="fade-in" data-aos-delay="1100" class="md:w-12 sm:w-10 w-8">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/godot/godot-original.svg" />
+                </li>
+                <li data-aos="fade-in" data-aos-delay="1150" class="md:w-12 sm:w-10 w-8">
+                    <img src="https://camo.githubusercontent.com/a861201d3e831c640506586d2e6423d5e6b00874b7867904fbed218e41fabbab/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f342f34302f41646f62655f5072656d696572655f50726f5f43435f69636f6e2e7376672f3231303170782d41646f62655f5072656d696572655f50726f5f43435f69636f6e2e7376672e706e67" alt="">
+                </li>
+                <li data-aos="fade-in" data-aos-delay="1200" class="md:w-12 sm:w-10 w-8">
+                    <img src="https://camo.githubusercontent.com/b2fb2abe17fa656114cbe81778551c83abbf818fdf2a57c1f2a0f8e0bc458eec/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f612f61662f41646f62655f50686f746f73686f705f43435f69636f6e2e7376672f3132303070782d41646f62655f50686f746f73686f705f43435f69636f6e2e7376672e706e67" alt="">
+                </li>
+            </ul>
+            <div class="flex justify-center mt-8 gap-4">
+                <a href="#" target="_blank" class="backdrop-blur-md bg-gradient-to-r from-sky-500/50 to-indigo-500/50 hover:from-indigo-500/70 hover:to-sky-500/70 transition text-white font-medium py-2 px-6 rounded-full text-sm shadow-lg">
+                    What have I made with it?
+                </a>
+            </div>
+            <div class="flex flex-wrap justify-center mt-4 gap-4 px-4 py-4">
+                <a href="https://github.com/Zenith-Infinity/zenverse-web" class="w-fit" target="_blank">
+                    <div class="flex p-4 rounded-md bg-gray-800/50 hover:bg-gray-800/70 backdrop-blur-md justify-center items-center gap-2 border-t-[3px] border-sky-500">
+                        <img src="assets/img/zenverse.png" class="md:w-10 md:h-10 md:w-8 md:h-8 w-6 h-6" alt="">
+                        <h1 class="text-white font-semibold md:text-lg sm:text-md text-xs truncate">Zenverse</h1>
+                    </div>
+                </a>
+                <a href="https://github.com/hrisz/GG-Store-Top-Up-Apps" class="w-fit" target="_blank">
+                    <div class="flex p-4 rounded-md bg-gray-800/50 hover:bg-gray-800/70 backdrop-blur-md justify-center items-center gap-2 border-t-[3px] border-sky-500">
+                        <img src="assets/img/ggstore_mainlogo.ico" class="md:w-10 md:h-10 md:w-8 md:h-8 w-6 h-6" alt="">
+                        <h1 class="text-white font-semibold md:text-lg sm:text-md text-xs truncate">GG Store</h1>
+                    </div>
+                </a>
+                <a href="https://github.com/Zenith-Infinity/zenverse-apps" class="w-fit" target="_blank">
+                    <div class="flex p-4 rounded-md bg-gray-800/50 hover:bg-gray-800/70 backdrop-blur-md justify-center items-center gap-2 border-t-[3px] border-sky-500">
+                        <img src="assets/img/zenapps.png" class="md:w-10 md:h-10 md:w-8 md:h-8 w-6 h-6" alt="">
+                        <h1 class="text-white font-semibold md:text-lg sm:text-md text-xs truncate">Zenverse Apps</h1>
+                    </div>
+                </a>
+            </div>
+        </div>
+      
+        <div class="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden">
+            <div class="absolute w-72 h-72 bg-sky-600/30 opacity-20 rounded-full mix-blend-screen filter blur-3xl animate-pulse top-20 left-1/2 transform -translate-x-1/2"></div>
+            <div class="absolute w-72 h-72 bg-purple-600/30 opacity-20 rounded-full mix-blend-screen filter blur-3xl animate-pulse bottom-20 left-1/3"></div>
+        </div>
+
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script async src="assets/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</body>
+
+</html>
