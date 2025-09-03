@@ -12,9 +12,9 @@ const navbar = document.getElementById("main-nav");
 
 window.addEventListener("scroll", () => {
     if (window.scrollY > 1) {
-        navbar.classList.add("bg-black/60", "backdrop-blur-lg");
+        navbar.classList.add("bg-black/60", "backdrop-blur-lg", "border-b", "border-slate-800");
     } else {
-        navbar.classList.remove("bg-black/60", "backdrop-blur-lg");
+        navbar.classList.remove("bg-black/60", "backdrop-blur-lg", "border-b", "border-slate-800");
     }
 });
 

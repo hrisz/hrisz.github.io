@@ -30,3 +30,64 @@ nav {
     height: 100%;
     object-fit: cover;
 }
+
+.hover-underline {
+  font-size: 2rem;
+  color: #ffffff;
+  position: relative;
+  display: inline-block;
+}
+
+.hover-underline::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, oklch(82.8% 0.111 230.318), oklch(70.2% 0.183 293.541));
+  bottom: -5px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s ease-out;
+}
+
+.hover-underline:hover::after {
+  transform: scaleX(1);
+}
+
+.holographic-effect {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.holographic-effect::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent 30%,
+    rgba(125, 211, 252, 0.4),
+    rgba(167, 139, 250, 0.4)
+  );
+  transform: rotate(-45deg) translateY(-100%);
+  transition: transform 0.6s ease, opacity 0.4s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.holographic-effect:hover {
+  box-shadow: 0 0 15px rgba(125, 211, 252, 0.6), 
+              0 0 25px rgba(167, 139, 250, 0.5);
+  border-color: rgba(125, 211, 252, 0.9);
+}
+
+.holographic-effect:hover::before {
+  opacity: 1;
+  transform: rotate(-45deg) translateY(100%);
+}
